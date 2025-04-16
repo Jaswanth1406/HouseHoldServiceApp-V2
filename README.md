@@ -155,18 +155,27 @@ The wireframe serves as a navigational guide for the application. You can use yo
    ```bash
    git clone https://github.com/your-username/household-services-v2.git
    cd household-services-v2
+   ```
    
 2.Install backend dependencies:
+ ```bash
   pip install -r requirements.txt
+```
 
 3.Start Redis server (ensure Redis is installed):
+ ```bash
   redis-server
+```
 
 4.Start Celery worker:
+```bash
   celery -A app.celery worker --loglevel=info
+```
 
 5.Run the Flask server:
+```bash
   flask run
+```
 
 6.Access the application at:
   http://localhost:5000/
